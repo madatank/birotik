@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birotik</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/market.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="icon" type="image/x-icon" href="assets/svg/favicon.svg">
+</head>
+
+<body>
+    <div class="header-container"></div>
+
+    <main>
+        <div class="store-info">
+            <div class="container">
+                <div class="store-info-colums">
+                    <div class="store-info-colum">
+                        <span class="store-info-background">
+                            <img src="assets/svg/delivery.svg" alt="Icon" class="store-icon">
+                        </span>
+                        <h2 class="store-info-text">Livrare în 24H</h2>
+                    </div>
+                    <span class="separator"></span>
+                    <div class="store-info-colum">
+                        <span class="store-info-background">
+                            <img src="assets/svg/coin.svg" alt="Icon" class="store-icon">
+                        </span>
+                        <h2 class="store-info-text">Prețuri irezistibile</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="store-container">
+                <div class="filter-panel">
+                    <h2 class="filter-title">Filtre</h2>
+                    <div class="price-box">
+                        <h2 class="section-title">Preț:</h2>
+                        <div class="price-inputs">
+                            <input type="number" id="minPrice" class="price-input" value="1">
+                            <input type="number" id="maxPrice" class="price-input" value="343">
+                        </div>
+                        <div class="slider-container">
+                            <div class="slider-track"></div>
+                            <input type="range" min="1" max="500" value="1" id="rangeMin" class="range-input">
+                            <input type="range" min="1" max="500" value="343" id="rangeMax" class="range-input">
+                        </div>
+                        <button class="apply-btn">
+                            Aplică
+                        </button>
+                    </div>
+
+                    <div class="category-box">
+                        <h2 class="section-title">Categorii:</h2>
+                        <div class="categories">
+                            <label class="category-item">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <div class="category-content">
+                                    <span>Reduceri</span>
+                                    <span class="filter-separator">|</span>
+                                    <span class="count">12</span>
+                                </div>
+                            </label>
+                            <label class="category-item">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <div class="category-content">
+                                    <span>Rechizite</span>
+                                    <span class="filter-separator">|</span>
+                                    <span class="count">56</span>
+                                </div>
+                            </label>
+                            <label class="category-item">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <div class="category-content">
+                                    <span>Scaune De Birou</span>
+                                    <span class="filter-separator">|</span>
+                                    <span class="count">23</span>
+                                </div>
+                            </label>
+                            <label class="category-item">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <div class="category-content">
+                                    <span>Scanere</span>
+                                    <span class="filter-separator">|</span>
+                                    <span class="count">12</span>
+                                </div>
+                            </label>
+                            <label class="category-item">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <div class="category-content">
+                                    <span>Printare</span>
+                                    <span class="filter-separator">|</span>
+                                    <span class="count">34</span>
+                                </div>
+                            </label>
+                            <label class="category-item">
+                                <input type="checkbox">
+                                <span class="custom-checkbox"></span>
+                                <div class="category-content">
+                                    <span>Logistică</span>
+                                    <span class="filter-separator">|</span>
+                                    <span class="count">26</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <div class="sort-products">
+                        <span class="match-count">Produse</span>
+                        <select name="sort" id="sort" class="sort-select">
+                            <option value="relevance">De la A-Z</option>
+                            <option value="price-asc">Preț: Crescător</option>
+                            <option value="price-desc">Preț: Descrescător</option>
+                            <option value="newest">Cele mai noi</option>
+                        </select>
+                    </div>
+                    <div class="match-sealed">
+                        <h2 class="match-title">Cel mai vândut produs a lunii:</h2>
+
+                        <div class="product-card">
+                            <img class="product-card-image" src="assets/images/prod/1.webp" />
+                            <p class="product-card-category">Category</p>
+                            <p class="product-card-name">Marcaje multicolore p/t file de document</p>
+                            <p class="product-card-price">12.00L</p>
+                            <button class="product-card-button">Adaugă</button>
+                        </div>
+                        
+                    </div>
+
+                    <div class="products-cards-container">
+                        <div class="product-card">
+                            <img class="product-card-image" src="assets/images/prod/2.webp" />
+                            <p class="product-card-category">Caligrafie</p>
+                            <p class="product-card-name">Corector bandă ”Frost White” 4M</p>
+                            <p class="product-card-price">15.00L</p>
+                            <button class="product-card-button">Adaugă</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class=" footer-container"></div>
+
+</body>
+
+<script src=" js_code/header-injector.js"></script>
+<script src=" js_code/footer-injector.js"></script>
+<script type="module" src="js_code/card.js"></script>
+<script type="module" src="js_code/mockupData.js"></script>
+
+</html>

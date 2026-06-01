@@ -1,0 +1,204 @@
+.checkout {
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: start;
+    margin-top: 120px;
+}
+
+.checkout-form {
+    background: white;
+}
+
+.checkout-form h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    color: var(--dark);
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 500;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: var(--dark);
+}
+
+.checkout-form input,
+.checkout-form select,
+.checkout-form textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    font-size: 14px;
+    transition: 0.2s;
+    border: 1px solid var(--second-accent);
+    border-radius: 8px;
+    padding: 15px 16px;
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--dark);
+}
+
+.checkout-form input::placeholder,
+.checkout-form select::placeholder,
+.checkout-form textarea::placeholder {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--accent);
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: start;
+
+}
+
+.checkbox-group input {
+    border-radius: 6px;
+    padding: 0;
+    fill: #fff;
+    border: 1px solid var(--second-accent);
+    display: inline-block;
+    width: 50px;
+    margin-right: 10px;
+    margin-top: 5px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--dark);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.checkout-summary {
+    background: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    border: 1px solid var(--accent);
+    padding: 24px;
+    margin-bottom: 30px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 14px;
+}
+
+.summary-row.total {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.coupon {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.coupon input {
+    border: 1px solid var(--second-accent);
+    padding: 4px 24px;
+    height: 48px;
+    width: 100%;
+}
+
+.coupon input::placeholder {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: var(--accent);
+}
+
+.coupon button {
+    cursor: pointer;
+    padding: 8px 20px;
+    width: 156px;
+    height: 48px;
+    background: var(--light);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: var(--dark);
+    width: 100%;
+
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.checkout-btn {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    background: #7ac943;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.checkout-btn:hover {
+    opacity: 0.9;
+}
+@media (max-width: 900px) {
+
+    .checkout {
+        grid-template-columns: 1fr;
+    }
+
+
+}
+
+@media (max-width: 600px) {
+
+    .two-col {
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birotik</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/checkout.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/svg/favicon.svg">
+</head>
+
+<body>
+    <div class="header-container"></div>
+
+    <main>
+        <div class="container">
+            <form class="checkout">
+                <div class="checkout-form">
+                    <h2>LIVRARE</h2>
+                    <div class="row two-col">
+                        <div class="input-group">
+                            <label>Nume*</label>
+                            <input type="text" required>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Prenume*</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+
+                    <div class="row two-col">
+                        <div class="input-group">
+                            <label>Oraș*</label>
+                            <select required>
+                                <option>Chișinău</option>
+                                <option>Bălți</option>
+                                <option>Cahul</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label>Cod poștal</label>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-group">
+                            <label>Adresă*</label>
+                            <input type="text" placeholder="Adresa completă (stradă, nr. clădire, ap.)" required>
+                        </div>
+                    </div>
+
+                    <div class="row two-col">
+                        <div class="input-group">
+                            <label>Nr de telefon (optional)</label>
+                            <input type="text">
+                        </div>
+                        <div class="input-group">
+                            <label>Adresa de e-mail*</label>
+                            <input type="email" placeholder="marcel.bostan@gmail.com" required>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="input-group">
+                            <label>Comentarii la comandă (optional)</label>
+                            <textarea placeholder="Scrie dacă ai o dorință specifică la comandă..."></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="checkout-summary">
+                    <div class="summary-row">
+                        <span>Subtotal</span>
+                        <span class="subtotal-price"></span>
+                    </div>
+
+                    <div class="summary-row">
+                        <span>Reducere</span>
+                        <span class="discount"></span>
+                    </div>
+
+                    <div class="summary-row total">
+                        <span>Livrare</span>
+                        <span class="total-price"></span>
+                    </div>
+
+                    <div class="coupon">
+                        <input class="coupon-input" type="text" placeholder="Codul cuponului">
+                        <button class="use-discount">Folosește cuponul</button>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox" checked>
+                        <label>
+                            Confirm că informația este veridică,
+                            adresa este completă de pe deplin și corespunzătoare.
+                        </label>
+                    </div>
+
+                    <div class="checkbox-group">
+                        <input type="checkbox">
+                        <label>
+                            Doresc să primesc informații despre reduceri
+                            și cupoane pe e-mail. (Optional)
+                        </label>
+                    </div>
+
+                    <button type="submit" class="checkout-btn">
+                        <span>Plasează comanda</span>
+                        <span> | </span>
+                        <span class="button-price">130.00L</span>
+                    </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <div class=" footer-container"></div>
+</body>
+
+<script src="js_code/header-injector.js"></script>
+<script src="js_code/footer-injector.js"></script>
+<script type="module" src="js_code/checkout.js"></script>
+<script type="module" src="js_code/mockupData.js"></script>
+
+
+</html>

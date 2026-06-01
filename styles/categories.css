@@ -1,0 +1,93 @@
+.categories {
+    margin-top: 80px;
+}
+
+.categories_heading {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    color: var(--dark);
+}
+
+.categories_gallery {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas:
+        "a b"
+        "c d";
+    margin: 15px -12px 40px -12px;
+}
+
+.categori_item {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 12px;
+}
+
+.item1 {
+    grid-area: a;
+    height: 520px;
+}
+
+.item2 {
+    grid-area: b;
+    height: 840px;
+}
+
+.item3 {
+    grid-area: c;
+    height: 833px;
+    margin-top: -300px;
+}
+
+.item4 {
+    grid-area: d;
+    height: 520px;
+}
+
+@media (max-width: 768px) {
+    .categories_gallery {
+        grid-template-columns: 100%;
+        grid-template-areas:
+            "a"
+            "b"
+            "c"
+            "d";
+    }
+
+    .item1,
+    .item2,
+    .item3,
+    .item4 {
+        height: 400px;
+        margin-top: 0;
+    }
+}
+
+.categorie_button {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    color: var(--light);
+}
+
+
+.item1 {
+    background-image: url('../assets/images/girl on chair.png');
+}
+
+.item2 {
+    background-image: url('../assets/images/calculator.png');
+}
+
+.item3 {
+    background-image: url('../assets/images/elements stationery.png');
+}
+
+.item4 {
+    background-image: url('../assets/images/printers.png');
+}

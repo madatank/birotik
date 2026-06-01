@@ -1,0 +1,44 @@
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 150px auto;
+
+}
+
+.message-title {
+    font-family: var(--third-family);
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 140%;
+    text-align: center;
+    color: #4b1111;
+}
+
+.message-subtitle {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--dark);
+}
+
+.message-text {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--dark);
+}
+
+.message-contacts {
+    font-family: var(--second-family);
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--dark);
+}

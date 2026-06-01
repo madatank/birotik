@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birotik</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="stylesheet" href="styles/footer.css" />
+    <link rel="stylesheet" href="styles/cart.css" />
+
+    <link rel="icon" type="image/x-icon" href="assets/svg/favicon.svg">
+</head>
+
+<body>
+    <div class="header-container"></div>
+
+    <main>
+        <div class="container">
+            <div class="cart-wrapper">
+                <div class="cart">
+                    <div class="cart-header">
+                        <div class="cart-title">Produse</div>
+                        <div></div>
+                        <div class="price">Preț</div>
+                        <div class="qty">Cantitate</div>
+                        <div class="total">Total</div>
+                    </div>
+                    <div class="cart-items"></div>
+                </div>
+
+                <div class="checkout">
+                    <div class="prices-wrapper">
+                        <div>Subtotal</div>
+                        <div class="subtotal-price"></div>
+                    </div>
+                    <div class="prices-wrapper">
+                        <div>Shipping</div>
+                        <div class="shipping-price"></div>
+                    </div>
+                    <div class="prices-wrapper">
+                        <div>Total</div>
+                        <div class="total-price"></div>
+                    </div>
+                    <button>
+                        <a href="checkout.html">Checkout →</a>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class=" footer-container"></div>
+
+</body>
+
+<script src=" js_code/header-injector.js"></script>
+<script src=" js_code/footer-injector.js"></script>
+<script type="module" src="js_code/cart.js"></script>
+<script type="module" src="js_code/mockupData.js"></script>
+
+
+</html>
